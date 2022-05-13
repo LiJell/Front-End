@@ -1,15 +1,4 @@
-// const 와 let의 차이점
-// const -> cannot changed
-// let -> can be changed later
-const a = 5;
-const b = 2;
-let myName = "Hanju";
-
-console.log(a + b);
-console.log(a * b);
-console.log(a / b);
-console.log("Hello! " + myName);
-
-myName = "LiJell";
-
-console.log("your new name is " + myName);
+const amIFat= null;
+// amIFat에 아무것도 채워지지 않은 null 채우는것을 의미
+let something;
+console.log(something);
