@@ -1,18 +1,21 @@
-const h1 = document.querySelector("div.hello:first-child h1");
-// properties를 찾을 땐 console.dir 를 이용하고 browser console에서 확인하는 방법이 좋음
+const loginForm = document.querySelector("#login-form");
+const loginInput = loginForm.querySelector("input");
+const loginButton = loginForm.querySelector("button");
 
-// function handleTitleClick() {
-//   const clickedClass = "clicked";
-//   if (h1.classList.contains(clickedClass)) {
-//     h1.classList.remove(clickedClass);
-//   } else {
-//     h1.classList.add(clickedClass);
+// js 기능 사용할때
+// function onLoginBtnClick() {
+//   const username = loginInput.value;
+//   if (username === "") {
+//     alert("Please write your name");
+//   } else if (username.length > 15) {
+//     alert("Your name is too long.");
 //   }
 // }
-// 위 코드는 toggle로 대체
-
-function handleTitleClick() {
-  h1.classList.toggle("clicked");
+// loginButton.addEventListener("click", onLoginBtnClick);
+// browser을 이용할 때 html에서 input을 form으로 감싸주고 input에 조건을 넣어주면 됨
+function onLoginBtnClick() {
+  const username = loginInput.value;
+  console.log(username);
 }
 
-h1.addEventListener("click", handleTitleClick);
+
