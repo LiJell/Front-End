@@ -1,12 +1,9 @@
-const player = {
-  name: "LiJell",
-  sayHello: function (otherPersonsName) {
-    console.log("Hello! " + otherPersonsName + " nice to meet you!");
-  },
-};
+// 요즘은 prompt 잘 안씀
+// parseInt is a converter: string to number
+const age = parseInt(prompt("How old are you?"));
 
-
-console.log(player.name);
-player.sayHello("Hanju");
-
-
+if (isNaN(age)){
+    console.log("Please write a number");
+} else {
+    console.log("Thank you for writing your age")
+}
