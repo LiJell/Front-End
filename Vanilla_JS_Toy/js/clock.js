@@ -1,5 +1,6 @@
 const clock = document.querySelector("h2#clock");
 
+//padStart(a, b) a-> want length of string b-> add string to fulfill length of string as much as 'a'
 function getClock() {
   const date = new Date();
   const hours = String(date.getHours()).padStart(2,"0");
