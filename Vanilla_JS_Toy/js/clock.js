@@ -5,4 +5,5 @@ function sayHello() {
 }
 
 // argument 1: function that I want to run, argument 2: how often (ms)
-setInterval(sayHello, 5000);
+// setInterval(sayHello, 5000);
+setTimeout(sayHello, 5000);
