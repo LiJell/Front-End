@@ -1,9 +1,10 @@
 const clock = document.querySelector("h2#clock");
 
-function sayHello() {
-  console.log("hello");
+function getClock() {
+  const date = new Date();
+  clock.innerText = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
 }
 
 // argument 1: function that I want to run, argument 2: how often (ms)
-// setInterval(sayHello, 5000);
-setTimeout(sayHello, 5000);
+getClock();
+setInterval(getClock, 1000);
