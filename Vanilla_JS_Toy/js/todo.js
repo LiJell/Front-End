@@ -28,6 +28,7 @@ function deleteToDo(event) {
   // as a result, new array will be created, not modify old one
   // li.id 는 string이고 toDo.id는 number인 점을 console.log로 확인
   toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+  saveToDos();
 }
 
 function paintToDo(newToDo) {

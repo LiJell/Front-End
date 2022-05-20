@@ -2,7 +2,7 @@
 //getCurrentPosition need two argument
 // 1. function when there is no error 2. function when error happened
 // https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition
-const API_KEY = "********************";
+const API_KEY = "c501c7007a99b5dc4833ef7cfdd74615";
 
 function onGeoOk(position) {
   const lat = position.coords.latitude;
